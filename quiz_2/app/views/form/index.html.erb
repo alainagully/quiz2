@@ -1,0 +1,10 @@
+<h1>All Forms</h1>
+
+<% @forms.each do |form| %>
+  <div>
+    <h2><%= link_to form.name, form_path(form) %></h2>
+    <p> <%= form.email %></p>
+    <p> <%= form.department %></p>
+    <p> <%= form.comment %></p>
+  </div>
+<% end %>
